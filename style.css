@@ -1,0 +1,110 @@
+body {
+    /*box-shadow: rgba(2, 168, 243, 0.5) 0px 0px 0px 3px;*/
+}
+
+#controls {
+    position: fixed;
+    width: 100px;
+    height: 172px;
+    left: 50%;
+    bottom: -135px;
+    margin-left: -50px;
+    transition: 0.2s;
+    z-index: 50;
+}
+
+.controlButton {
+    width: 100%;
+    height: 30px;
+    margin: 2px 0;
+    display: inline-block;
+}
+
+#colorInput {
+    background-color: rgb(200, 200, 200);
+    border: none;
+    width: 30px;
+}
+
+#plusButton {
+    background-color: rgb(200, 200, 200);
+    border: none;
+    width: 30px;
+}
+
+#menuButton {
+    background-color: rgb(200, 200, 200);
+    border: none;
+}
+
+/* Display */
+
+#display {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#background {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 5px;
+    background-size: auto 100%;
+    background-position-x: 0;
+    background-position-y: 0;
+    transition: 0.1s;
+}
+
+#title {
+    font-size: 30px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border-bottom: 2px solid grey;
+    padding-bottom: 5px;
+}
+
+#description {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    padding-top: 30px;
+}
+
+/* Storyboard */
+
+.storyboard {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-size: auto 100%;
+    background-position-x: 0;
+    background-position-y: 0;
+    transition: 0.1s;
+    display: inline-block;
+    box-shadow: inset rgba(255, 255, 255, 0.5) 0px 0px 0px 5px;
+    border-radius: 5%;
+}
+
+.storyboard:hover {
+    cursor: pointer;
+    box-shadow: inset rgba(2, 168, 243, 0.5) 0px 0px 0px 3px;
+}
+
+.storyboardTitle {
+    font-size: 30px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border-bottom: 2px solid grey;
+    padding-bottom: 5px;
+}
+
+.storyboardDescription {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    padding-top: 30px;
+}
