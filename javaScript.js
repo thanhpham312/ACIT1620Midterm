@@ -24,8 +24,6 @@ var selectedBackground = background;
 var selectedTitle = title;
 var selectedDescription = description;
 
-var currentBgHeight = background.offsetHeight;
-
 var newStoryboardCount = 1;
 
 // Functions:
@@ -102,15 +100,10 @@ function moveBG(keyCode) {
         background.style.backgroundPositionY = currentBgPositionY + 10 + "px";
     }
     else if(keyCode == 187 || keyCode == 107) {
-        //if(Number.isInteger(currentBgHeight))
-        currentBgHeight += 10;
-        selectedBackground.style.backgroundSize = "auto " + currentBgHeight + "px";
-        background.style.backgroundSize = "auto " + currentBgHeight + "px";
+        background.style.height = background.offsetHeight + 10 + "px";
     }
     else if(keyCode == 189 || keyCode == 109) {
-        currentBgHeight -= 10;
-        selectedBackground.style.backgroundSize = "auto " + currentBgHeight + "px";
-        background.style.backgroundSize = "auto " + currentBgHeight + "px";
+        background.style.height = background.offsetHeight - 10 + "px";
     }
 }
 
